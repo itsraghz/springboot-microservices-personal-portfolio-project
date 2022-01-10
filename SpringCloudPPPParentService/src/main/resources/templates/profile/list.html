@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+    <div th:replace="fragments/header :: headers"></div>
+    <body>
+        <div th:replace="fragments/menu :: menu"></div>
+        <h2 class="header">List of Profiles</h2>
+		<table>
+			<thead>
+				<th>Id</th>
+				<th>First Name</th>
+				<th>Last Name</th>
+				<th>Email Address</th>
+				<th>Mobile No.</th>
+				<th>UserId</th>
+				<th>Password</th>
+			</thead>			
+			<tbody>
+				<tr th:each="user : ${usersList}">					
+   					<td>
+   						<a th:href="@{/ppp/profile/{id}(id=${user.id})}">
+   							<span th:text="${user.id}"/>
+   						</a>
+   					</td>   					
+					<td th:text="${user.firstName}"/>
+					<td th:text="${user.lastName}"/>
+					<td th:text="${user.emailAddress}"/>
+					<td th:text="${user.mobileNo}"/>
+					<td th:text="${user.userId}"/>
+					<td th:text="${user.password}"/>
+				</tr> 
+			</tbody>
+		</table>
+        <div th:replace="fragments/footer :: copy"></div>
+    </body>
+</html>

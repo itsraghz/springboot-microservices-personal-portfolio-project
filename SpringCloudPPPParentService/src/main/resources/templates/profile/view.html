@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+    <div th:replace="fragments/header :: headers"></div>
+    <body>
+        <div th:replace="fragments/menu :: menu"></div>
+        <h2 class="header">
+        	Profile Details of [[ ${user.firstName} ]], [[ ${user.lastName} ]]
+        </h2>
+        <b>Edit : </b> Click here to <a th:href="@{/ppp/profile/edit/{id}(id=${user.id})}">edit</a> the profile.
+		<table>
+			<thead>
+				<th>Field</th>
+				<th>Value</th>
+			</thead>			
+			<tbody>
+				<tr>
+					<td>Id</td>
+					<td th:text="${user.id}"/>
+				</tr>
+				<tr>
+					<td>First Name</td>
+					<td th:text="${user.firstName}"/>
+				</tr>
+				<tr>
+					<td>Last Name</td>
+					<td th:text="${user.lastName}"/>
+				</tr>
+				<tr>
+					<td>Email Address</td>
+					<td th:text="${user.emailAddress}"/>
+				</tr>
+				<tr>
+					<td>Mobile No.</td>
+					<td th:text="${user.mobileNo}"/>
+				</tr>
+				<tr>
+					<td>UserId</td>
+					<td th:text="${user.userId}"/>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td th:text="${user.password}"/>
+				</tr>
+			</tbody>
+		</table>
+        <div th:replace="fragments/footer :: copy"></div>
+    </body>
+</html>

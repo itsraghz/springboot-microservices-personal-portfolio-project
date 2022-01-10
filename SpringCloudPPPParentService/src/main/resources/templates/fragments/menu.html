@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+    <div th:fragment="menu">
+    	<h1>Personal Portfolio Project (PPP)</h1>
+    	<hr/>
+        <div class="menu">
+            <ul>
+                <li>&nbsp;<a th:href="@{/ppp/}">Home</a></li>
+                <li>&nbsp;<a th:href="@{/ppp/profile/sample}">Profile (Sample)</a></li>
+                <li>&nbsp;<a th:href="@{/ppp/profile/}">Profile</a></li>
+                <li>&nbsp;<a th:href="@{/ppp/profile/add}">New Profile</a></li>
+                <li>&nbsp;<a href="http://localhost:21000/swagger-ui.html">Swagger UI(Parent)</a></li>
+                <li>&nbsp;<a href="http://localhost:21001/swagger-ui.html">Swagger UI(Profile)</a></li>
+                <li>&nbsp;<a th:href="@{/ppp/contacts/}">Contacts</a></li>
+                <li>&nbsp;<a th:href="@{/ppp/tasks/}">Tasks</a></li>
+                <li>&nbsp;<a th:href="@{/ppp/accounts}">Accounts</a></li>
+                <li>&nbsp;<a th:href="@{/ppp/logout}">Logout</a></li>
+            </ul>
+        </div>
+        <br/><br/>
+        <hr/>
+    </div>
+</html>

@@ -1,0 +1,231 @@
+body {
+	width: 90%;
+    border: 1px solid #ddbbcc;
+}
+
+* {
+    font-family: 'Lora', serif;    
+}
+
+.notice {
+    background-color: teal;
+    color: white;
+}
+
+h1 {
+    font-family: "Calibri";
+    font-family: "Bodoni MT Poster Compressed";
+    font-family: 'Lora', serif;
+    color: navy;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 10px;
+    margin: 10px;
+    padding-bottom: 5px;
+}
+
+h1.header {
+    font-family: "Bodoni MT Poster Compressed";
+    color: navy;
+    text-align: center;
+    letter-spacing: 5px;
+    padding: 10px;
+    margin: 10px;
+    padding-bottom: 5px;
+}
+.center {
+    text-align: center;
+    text-decoration: darkgreen;
+}
+
+.container {
+    left: 15px;
+    width: 90%;
+    /*border: 1px solid maroon;*/
+}
+
+h2.header {
+    color: green;
+    text-align: center;
+}
+
+h3.header {
+    color: green;
+    text-align: center;
+    /*margin-bottom: 5px;
+    padding-bottom: 10px;*/
+}
+
+.footerNotWorking {
+    position: relative;
+    left: 20px;
+    width: 90%;
+    font-family: "Arial";
+    color: slategray;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: grey;
+  color: #efefef;
+}
+
+.footerTxt {
+  text-align: center;
+  padding: 5px;  
+  margin: 5px;
+  margin-top: 10px;
+}
+
+span.versionInfo {
+    float: right;
+}
+
+input[type=text] {
+    font-family: "Bradley Hand ITC";
+    color: green;
+    font-weight: bold;
+}
+
+textarea, textarea.input {
+    font-family: "Bradley Hand ITC";
+    color: green;
+    font-weight: bold;
+}
+
+td.quote {
+    font-family: "Bradley Hand ITC";
+    color: gray;
+    font-weight: bold;
+}
+
+.colspan2 {
+    text-align: center;
+}
+
+.narration {
+    width: 80%;
+    left: 50px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.menu1 {
+    /*margin: 5px;*/
+    /*padding: 10px;*/
+    background-color: lightblue;
+    color: black;
+    font-size: 110%;
+    text-align: center;
+}
+
+.menu li {
+    list-style: none;
+    margin: 5px;
+    padding: 3px;
+    float: left;
+    /*border: 1px solid indigo;*/
+    background-color: lightblue;
+}
+
+.table {
+    width: 90%;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.table th {
+    border: 1px solid gray;
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+    background-color: seagreen;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+}
+table {
+    border: 1px solid black;
+    font-family: "Berlin Sans FB";
+    padding: 5px;
+    width: 90%;
+    top: 10px;
+    margin: 5px;
+    position: relative;
+    left: 50px;
+}
+
+tr, th, td {
+    border: 1px solid gray;
+    text-align: left;
+    padding: 5px;
+    margin: 5px;
+}
+
+td {
+    font-weight: normal;
+    font-size: 98%;
+}
+
+td.center {
+    text-align: center;
+}
+
+th {
+    background-color: seagreen;
+    color: white;
+    font-weight: normal;
+    text-align: center;
+}
+
+span.dateHighlighted  {
+    background-color: yellow;
+    color: black;
+}
+
+span.textHighlighted  {
+    background-color: cyan;
+    color: black;
+}
+
+span.searchHighlighted {
+    background-color: yellow;
+    color: black;
+}
+
+.error {
+    color: red;
+}
+
+a:hover {
+    background-color: lightgreen;
+    color: black;
+}
+
+a:active {
+    background-color: lightblue;
+    color: red;
+}
+
+/* Ref: https://cssanimation.rocks/animating-links/ */
+
+a::after {
+    border-radius: 1em;
+    border-top: .1em solid #2F56B0;
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: .14em;
+    left: 0;
+    transition: right .4s cubic-bezier(0,.5,0,1),
+    border-color .4s ease-out;
+}
+
+a:hover::after {
+    animation: anchor-underline 2s cubic-bezier(0,.5,0,1) infinite;
+    border-color: #457DFB;
+}

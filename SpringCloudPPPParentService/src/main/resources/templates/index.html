@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+    <div th:replace="fragments/header :: headers"></div>
+    <body>
+        <div th:replace="fragments/menu :: menu"></div>
+        <h2 class="header">Welcome to the Home Page of [[ ${user} ]]</h2>
+		<div th:each="i: ${#numbers.sequence( 1, count, 1)}">
+			<span th:text="${i}"/>
+		</div>
+        <div th:replace="fragments/footer :: copy"></div>
+    </body>
+</html>
